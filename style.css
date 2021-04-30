@@ -1,3 +1,11 @@
 *{padding: 1vw;}
 
-.logo{ border: 2px solid; padding-bottom:5vw; color: black; font-size: 3vw; font-weight: 900; font-size: 4vw;}
+.logo{ border: 2px solid; padding-bottom:5vw; color: black; font-size: 3vw; font-weight: 900; font-size: 4vw;float: none;}
+
+.production{ border: 1px solid black; width: 40vw; position: relative; margin-top: 1vw; float: left;} 
+
+.summary{ border: 1px solid black; width: 40vw; position: relative; margin-top: 1vw; margin-left: 50vw; } 
+
+.partners{border: 1px solid black; position: relative; top: -40vw;margin-top: 0.5vw; width: 40vw;}
+
+ul{list-style-type: none;}
