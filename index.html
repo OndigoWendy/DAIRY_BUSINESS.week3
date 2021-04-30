@@ -6,57 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WENDY'S DAIRY FARM</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   <div class="logo"> <img src="images/hc1.png"alt="LOGO" style=" width: 15vw;"> WENDY'S DAIRY FARM <sub style="font-size: 2vw;" >Where fresh meets taste.</sub> </div>
 
   <div class="production">
     <h1>MILK PRODUCTION</h1>
-    <div>SHED A <input type="number" ></div>
-    <div>SHED B <input type="number"></div>
-    <div>SHED C <input type="number"></div>
-    <div>SHED D <input type="number"></div>
-    <div><input type="button" value="TOTAL PRODUCTION" onclick="getSum"> </div>
+    <div>SHED A <input type="number" value="6" id="A" ></div>
+    <div >SHED B <input type="number" value="2" id="B"></div>
+    <div >SHED C <input type="number" value="3" id="C"></div>
+    <div >SHED D <input type="number" value="4" id="D"></div>
+   <button onclick="getSum()">TOTAL PRODUCTION</button>
+    <p id="sumResult"></p>
   </div>
 
   <div class="summary">
     <h1>PRODUCTION SUMMARY</h1>
      <div class="daily">PER DAY</div>
        <ul>
-         <li>MINIMUM PRODUCTION <input type="button" value="min" ></li>
-         <li>MAXIMUM PRODUCTION</li>
-         <li>AVERAGE PRODUCTION</li>
+         <li> <input type="button" value="MINIMUM PRODUCTION" ></li>
+         <li><input type="button" value="MAXIMUM PRODUCTION"></li>
+         <li><input type="button" value="AVERAGE PRODUCTION"></li>
        </ul>
      <div class="weekly">PER WEEK</div>
      <ul>
-      <li>MINIMUM PRODUCTION</li>
-      <li>MAXIMUM PRODUCTION</li>
-      <li>AVERAGE PRODUCTION</li>
+      <li> <input type="button" value="MINIMUM PRODUCTION" ></li>
+         <li><input type="button" value="MAXIMUM PRODUCTION"></li>
+         <li><input type="button" value="AVERAGE PRODUCTION"></li>
     </ul>
      <div class="monthly">PER MONTH</div>
      <ul>
-      <li>MINIMUM PRODUCTION</li>
-      <li>MAXIMUM PRODUCTION</li>
-      <li>AVERAGE PRODUCTION</li>
+        <li> <input type="button" value="MINIMUM PRODUCTION" ></li>
+         <li><input type="button" value="MAXIMUM PRODUCTION"></li>
+         <li><input type="button" value="AVERAGE PRODUCTION"></li>
     </ul>
      <div class="yearly">PER YEAR</div>
      <ul>
-      <li>MINIMUM PRODUCTION</li>
-      <li>MAXIMUM PRODUCTION</li>
-      <li>AVERAGE PRODUCTION</li>
+         <li> <input type="button" value="MINIMUM PRODUCTION" ></li>
+         <li><input type="button" value="MAXIMUM PRODUCTION"></li>
+         <li><input type="button" value="AVERAGE PRODUCTION"></li>
     </ul>
    </div> 
 
    <div class="partners">
      <h1>BROOKSIDE DAIRIES LIMITED</h1>
-       <div>BUYING RATE <input type="number"></div>
+       <div>BUYING RATE PER LITRE <input type="number"></div>
+       <div>MILK IN LITRES <input type="number"></div>
        <ul>
-         <li>DAILY SALES</li>
-         <li>WEEKLY SALES</li>
-         <li>MONTHLY SALES</li>
-         <li>YEARLY SALES</li>
+         <li><input type="button" value="DAILY SALES"> </li>
+         <li><input type="button" value="WEEKLY SALES"></li>
+         <li><input type="button" value="MONTHLY SALES"></li>
+         <li><input type="button" value="YEARLY SALES"></li>
        </ul>
    </div>
 </body>
-<script src="./app.js"></script>
+
 </html>
