@@ -1,13 +1,21 @@
 # DAIRY_BUSINESS.week3
 
 ## Table of contents
+* [Project Name](#Project)
+* [Author]
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How it Works](#instructions)
 * [Contact information](#contacts)
 
-## General info
+## Project Name
+ WENDY'S DAIRY FARM
+
+ ## Author
+Wendy Ondigo
+
+## General info/Project Description
 This is a web program meant to help monitor production and sales in a dairy farm.
 	
 ## Technologies
