@@ -1,24 +1,24 @@
-*{padding: 1vw; font-size: 1vw; }
+*{padding: 1vw; font-size: 1vw; font-weight: 700; font-family:serif}
 
 ul{list-style-type: none;}
 
-.button{width: 8.5vw;}
+.button{width: 8.5vw; border-radius: 4%;}
 
 /*section1*/
 
-.logo{  border: 2px solid; padding-bottom:5vw; color: black; font-size: 3vw; font-weight: 900; float: none;}
+.logo{  border: 2px solid; border-radius: 5%; padding-bottom:5vw; padding-left: 7%; color: black; font-size: 3vw;  float: none;}
 
 /*section2*/
  
 .production{background-color: #c1ced8; border: 1px solid black; width: 90vw; height: 65vw; position: relative; margin-top: 1vw;  } 
 
-#A,#B,#C,#D,#A2,#B2,#C2,#D2,#A3,#B3,#C3,#D3,#A4,#B4,#C4,#D4,#A5,#B5,#C5,#D5,#A6,#B6,#C6,#D6,#A7,#B7,#C7,#D7{width: 4vw;}
+#A,#B,#C,#D,#A2,#B2,#C2,#D2,#A3,#B3,#C3,#D3,#A4,#B4,#C4,#D4,#A5,#B5,#C5,#D5,#A6,#B6,#C6,#D6,#A7,#B7,#C7,#D7{width: 4vw; border-radius: 5%;}
 
 .monday,.tuesday,.wednesday,.thursday,.friday,.saturday,.sunday{float: left; padding: 0.2vw;}
 
 /*section3*/
 
-.summary{ border: 1px solid black; width: 61vw; position: relative; margin-top: 1vw; margin-left: 0.5vw; display: flex; flex-direction: row;} 
+.summary{ background-color: rgb(190, 195, 223); border: 1px solid black; width: 61vw; position: relative; margin-top: 1vw; margin-left: 0.5vw; display: flex; flex-direction: row;} 
 
 .weekly{display: flex;}
 
