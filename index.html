@@ -9,125 +9,166 @@
   <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-  <div class="logo"> <img src="images/hc1.png"alt="LOGO" style=" width: 15vw;"> WENDY'S DAIRY FARM <sub style="font-size: 2vw;" >Where fresh meets taste.</sub> </div>
+      <div class="logo"> <img src="images/hc1.png"alt="LOGO" style=" width: 15vw;"> WENDY'S DAIRY FARM <sub style="font-size: 2vw;" >Where fresh meets taste.</sub> </div>
+        <input type="date" id="myDate" value="2021-02-05">
+          <button onclick="myDate()">Today's Date</button>
+            <p id="date"></p>
 
-  <div class="production">
-    <h1>MILK PRODUCTION</h1>
-    <div class="monday">Monday
-    <div>SHED A <input type="number" value="" id="A" ></div>
-    <div >SHED B <input type="number" value="" id="B"></div>
-    <div >SHED C <input type="number" value="" id="C"></div>
-    <div >SHED D <input type="number" value="" id="D"></div>
-   <button onclick="getSumMon()" class="button">TOTAL PRODUCTION</button>
-    <p id="sumResultMon"></p>
-  </div>
+<div class="production">
+        <h1>MILK PRODUCTION</h1>
+           <div class="monday">Monday
+               <div>SHED A <input type="number" value="2" id="A" ></div>
+               <div >SHED B <input type="number" value="3" id="B"></div>
+               <div >SHED C <input type="number" value="3" id="C"></div>
+               <div >SHED D <input type="number" value="4" id="D"></div>
+               <button onclick="getSumMon()" class="button">TOTAL PRODUCTION</button>
+                 <p id="sumResultMon"></p>
+               <button onclick="getMinPerDay()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+                 <p id="minPerDayResult"></p>
+               <button onclick="getMaxPerDay()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+                 <p id="maxPerDayResult"></p>
+               <button onclick="getAvgPerDay()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+                 <p id="avgPerDayResult"></p>
+       </div>
 
-  <div class="tuesday">Tuesday
-     <div>SHED A <input type="number" value="" id="A2" ></div>
-     <div >SHED B <input type="number" value="" id="B2"></div>
-     <div >SHED C <input type="number" value="" id="C2"></div>
-     <div >SHED D <input type="number" value="" id="D2"></div>
-     <button onclick="getSumTue()" class="button">TOTAL PRODUCTION</button>
-     <p id="sumResultTue"></p>
-   </div>
+       <div class="tuesday">Tuesday
+               <div>SHED A <input type="number" value="4" id="A2" ></div>
+               <div >SHED B <input type="number" value="6" id="B2"></div>
+               <div >SHED C <input type="number" value="128" id="C2"></div>
+               <div >SHED D <input type="number" value="34" id="D2"></div>
+               <button onclick="getSumTue()" class="button">TOTAL PRODUCTION</button>
+                 <p id="sumResultTue"></p>
+               <button onclick="getMinPerDay2()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+                 <p id="minPerDayResult2"></p>
+               <button onclick="getMaxPerDay2()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+                 <p id="maxPerDayResul2"></p>
+               <button onclick="getAvgPerDay2()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+                <p id="avgPerDayResult2"></p>
+       </div>
 
-   <div class="wednesday">Wednesday
-     <div>SHED A <input type="number" value="4" id="A3" ></div>
-     <div >SHED B <input type="number" value="2" id="B3"></div>
-     <div >SHED C <input type="number" value="3" id="C3"></div>
-     <div >SHED D <input type="number" value="4" id="D3"></div>
-     <button onclick="getSumWed()" class="button">TOTAL PRODUCTION</button>
-     <p id="sumResultWed"></p>
-   </div>
+       <div class="wednesday">Wednesday
+               <div>SHED A <input type="number" value="4" id="A3" ></div>
+               <div >SHED B <input type="number" value="2" id="B3"></div>
+               <div >SHED C <input type="number" value="3" id="C3"></div>
+               <div >SHED D <input type="number" value="4" id="D3"></div>
+               <button onclick="getSumWed()" class="button">TOTAL PRODUCTION</button>
+                 <p id="sumResultWed"></p>
+               <button onclick="getMinPerDay3()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+                 <p id="minPerDayResult3"></p>
+               <button onclick="getMaxPerDay3()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+                 <p id="maxPerDayResult3"></p>
+               <button onclick="getAvgPerDay3()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+                 <p id="avgPerDayResult3"></p>
+       </div>
 
-   <div class="thursday">Thursday
-     <div>SHED A <input type="number" value="6" id="A4" ></div>
-     <div >SHED B <input type="number" value="2" id="B4"></div>
-     <div >SHED C <input type="number" value="3" id="C4"></div>
-     <div >SHED D <input type="number" value="4" id="D4"></div>
-     <button onclick="getSumThur()" class="button">TOTAL PRODUCTION</button>
-     <p id="sumResultThur"></p>
-   </div>
+       <div class="thursday">Thursday
+              <div>SHED A <input type="number" value="6" id="A4" ></div>
+              <div >SHED B <input type="number" value="2" id="B4"></div>
+              <div >SHED C <input type="number" value="3" id="C4"></div>
+              <div >SHED D <input type="number" value="4" id="D4"></div>
+              <button onclick="getSumThur()" class="button">TOTAL PRODUCTION</button>
+                <p id="sumResultThur"></p>
+              <button onclick="getMinPerDay4()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+                <p id="minPerDayResult4"></p>
+              <button onclick="getMaxPerDay4()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+                <p id="maxPerDayResult4"></p>
+              <button onclick="getAvgPerDay4()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+                <p id="avgPerDayResult4"></p>
+       </div>
 
-   <div class="friday">Friday
-     <div>SHED A <input type="number" value="6" id="A5" ></div>
-     <div >SHED B <input type="number" value="2" id="B5"></div>
-     <div >SHED C <input type="number" value="3" id="C5"></div>
-     <div >SHED D <input type="number" value="4" id="D5"></div>
-     <button onclick="getSumFri()" class="button">TOTAL PRODUCTION</button>
-     <p id="sumResultFri"></p>
-   </div>
+      <div class="friday">Friday
+             <div>SHED A <input type="number" value="6" id="A5" ></div>
+             <div >SHED B <input type="number" value="2" id="B5"></div>
+             <div >SHED C <input type="number" value="3" id="C5"></div>
+             <div >SHED D <input type="number" value="4" id="D5"></div>
+             <button onclick="getSumFri()" class="button">TOTAL PRODUCTION</button>
+               <p id="sumResultFri"></p>
+             <button onclick="getMinPerDay5()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+               <p id="minPerDayResult5"></p>
+             <button onclick="getMaxPerDay5()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+               <p id="maxPerDayResult5"></p>
+             <button onclick="getAvgPerDay5()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+               <p id="avgPerDayResult5"></p>
+       </div>
 
-   <div class="saturday">Saturday
-     <div>SHED A <input type="number" value="6" id="A6" ></div>
-     <div >SHED B <input type="number" value="2" id="B6"></div>
-     <div >SHED C <input type="number" value="3" id="C6"></div>
-     <div >SHED D <input type="number" value="4" id="D6"></div>
-     <button onclick="getSumSat()" class="button">TOTAL PRODUCTION</button>
-     <p id="sumResultSat"></p>
-   </div>
+      <div class="saturday">Saturday
+             <div>SHED A <input type="number" value="6" id="A6" ></div>
+             <div >SHED B <input type="number" value="2" id="B6"></div>
+             <div >SHED C <input type="number" value="3" id="C6"></div>
+             <div >SHED D <input type="number" value="4" id="D6"></div>
+             <button onclick="getSumSat()" class="button">TOTAL PRODUCTION</button>
+               <p id="sumResultSat"></p>
+             <button onclick="getMinPerDay6()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+               <p id="minPerDayResult6"></p>
+             <button onclick="getMaxPerDay6()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+               <p id="maxPerDayResult6"></p>
+             <button onclick="getAvgPerDay6()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+               <p id="avgPerDayResult6"></p>
+       </div>
 
-   <div class="sunday">Sunday
-     <div>SHED A <input type="number" value="6" id="A7" ></div>
-     <div >SHED B <input type="number" value="2" id="B7"></div>
-     <div >SHED C <input type="number" value="3" id="C7"></div>
-     <div >SHED D <input type="number" value="4" id="D7"></div>
-     <button onclick="getSumSun()" class="button">TOTAL PRODUCTION</button>
-     <p id="sumResultSun"></p>
-   </div>
-  </div>
+      <div class="sunday">Sunday
+             <div>SHED A <input type="number" value="6" id="A7" ></div>
+             <div >SHED B <input type="number" value="2" id="B7"></div>
+             <div >SHED C <input type="number" value="3" id="C7"></div>
+             <div >SHED D <input type="number" value="4" id="D7"></div>
+             <button onclick="getSumSun()" class="button">TOTAL PRODUCTION</button>
+               <p id="sumResultSun"></p>
+             <button onclick="getMinPerDay7()" style="width: 8vw;">MINIMUM PRODUCTION</button></li>
+               <p id="minPerDayResult7"></p>
+             <button onclick="getMaxPerDay7()" style="width: 8vw;">MAXIMUM PRODUCTION</button>></li>
+               <p id="maxPerDayResult7"></p>
+             <button onclick="getAvgPerDay7()" style="width: 8vw;">AVERAGE PRODUCTION</button></li>
+               <p id="avgPerDayResult7"></p>
+       </div>
 
-  <div class="summary">
-    <h1>PRODUCTION SUMMARY</h1>
-     <div class="daily">PER DAY</div>
-       <ul>
-         <li> <button onclick="getMinPerDay()">MINIMUM PRODUCTION</button></li>
-              <p id="minPerDayResult"></p>
-         <li><button onclick="getMaxPerDay()">MAXIMUM PRODUCTION</button>></li>
-              <p id="maxPerDayResult"></p>
-         <li><button onclick="getAvgPerDay()">AVERAGE PRODUCTION</button></li>
-              <p id="avgPerDayResult"></p>
-       </ul>
-     <div class="weekly">PER WEEK</div>
-     <ul>
-      <li> <button onclick="getMinPerWeek()">MINIMUM PRODUCTION</button></li>
-           <p id="minPerWeekResult"></p>
-      <li><button onclick="getMaxPerWeek()">MAXIMUM PRODUCTION</button>></li>
-          <p id="maxPerWeekResult"></p>
-      <li><button onclick="getAvgPerWeek()">AVERAGE PRODUCTION</button></li>
-          <p id="avgPerWeekResult"></p>
-    </ul>
-     <div class="monthly">PER MONTH</div>
-     <ul>
-      <li> <button onclick="getMinPerMonth()">MINIMUM PRODUCTION</button></li>
-          <p id="minPerMonthResult"></p>
-      <li><button onclick="getMaxPerMonth()">MAXIMUM PRODUCTION</button>></li>
-           <p id="maxPerMonthResult"></p>
-      <li><button onclick="getAvgPerMonth()">AVERAGE PRODUCTION</button></li>
-           <p id="avgPerMonthResult"></p>
-    </ul>
-     <div class="yearly">PER YEAR</div>
-     <ul>
-      <li> <button onclick="getMinPerYear()">MINIMUM PRODUCTION</button></li>
-           <p id="minPerYearResult"></p>
-      <li><button onclick="getMaxPerYear()">MAXIMUM PRODUCTION</button>></li>
-           <p id="maxPerYearResult"></p>
-      <li><button onclick="getAvgPerYear()">AVERAGE PRODUCTION</button></li>
-            <p id="avgPerYearResult"></p>
-    </ul>
-   </div> 
+ </div>
 
-   <div class="partners">
-     <h1>BROOKSIDE DAIRIES LIMITED</h1>
-       <div>BUYING RATE PER LITRE <input type="number"></div>
-       <div>MILK IN LITRES <input type="number"></div>
-       <ul>
-         <li><input type="button" value="DAILY SALES"> </li>
-         <li><input type="button" value="WEEKLY SALES"></li>
-         <li><input type="button" value="MONTHLY SALES"></li>
-         <li><input type="button" value="YEARLY SALES"></li>
-       </ul>
-   </div>
+  <h1>PRODUCTION SUMMARY</h1>
+     <div class="summary">
+         <div class="weekly">PER WEEK
+            <ul>
+               <li> <button onclick="getMinPerWeek()">MINIMUM PRODUCTION</button></li>
+                      <p id="minPerWeekResult"></p>
+               <li><button onclick="getMaxPerWeek()">MAXIMUM PRODUCTION</button>></li>
+                      <p id="maxPerWeekResult"></p>
+               <li><button onclick="getAvgPerWeek()">AVERAGE PRODUCTION</button></li>
+                      <p id="avgPerWeekResult"></p>
+            </ul>
+  
+
+
+         <div class="monthly">PER MONTH</div>
+             <ul>
+               <li> <button onclick="getMinPerMonth()">MINIMUM PRODUCTION</button></li>
+                      <p id="minPerMonthResult"></p>
+               <li><button onclick="getMaxPerMonth()">MAXIMUM PRODUCTION</button>></li>
+                      <p id="maxPerMonthResult"></p>
+               <li><button onclick="getAvgPerMonth()">AVERAGE PRODUCTION</button></li>
+                      <p id="avgPerMonthResult"></p>
+             </ul>
+    
+         <div class="yearly">PER YEAR</div>
+              <ul>
+                <li> <button onclick="getMinPerYear()">MINIMUM PRODUCTION</button></li>
+                     <p id="minPerYearResult"></p>
+                <li><button onclick="getMaxPerYear()">MAXIMUM PRODUCTION</button>></li>
+                     <p id="maxPerYearResult"></p>
+                <li><button onclick="getAvgPerYear()">AVERAGE PRODUCTION</button></li>
+                     <p id="avgPerYearResult"></p>
+              </ul>
+         </div> 
+
+ <div class="partners">
+    <h1>BROOKSIDE DAIRIES LIMITED</h1>
+        <div>BUYING RATE PER LITRE <input type="number" id="buyingRate" value="45"></div>
+        <div>MILK IN LITRES <input type="number" id="sales"></div>
+            <ul>
+              <li><input type="button" value="DAILY SALES" id="dailySales" onclick="getDailySales"> </li>
+              <li><input type="button" value="WEEKLY SALES" id="weeklySales"></li>
+              <li><input type="button" value="MONTHLY SALES" id="monthlySales"></li>
+              <li><input type="button" value="YEARLY SALES" id="yearlySales"></li>
+            </ul>
+ </div>
 </body>
 
 </html>
