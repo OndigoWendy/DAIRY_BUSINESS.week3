@@ -22,8 +22,9 @@ ul{list-style-type: none;}
 
 .weekly{display: flex;}
 
+h1{font-size: 2vw;}
 /*section4*/
-.partners{background-color:rgb(107, 145, 107) ; border: 1px solid black; border-radius: 3%; position: absolute;  margin-left: 65vw; width: 23vw; height: 78vh;}
+.partners{background-color:rgb(107, 145, 107) ; border: 1px solid black; border-radius: 3%; position: absolute;  margin-left: 65vw; width: 23vw; height: 90vh;}
 
 
 

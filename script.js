@@ -157,7 +157,7 @@ function getSumThur() {
     
 sumResult=A+B+C+D;
    
-return document.getElementById("sumResultThur").innerHTML=sumResult;
+return document.getElementById("sumResultThur").innerHTML=sumResult+" " +"litres";
 }
 
 function getMinPerDay4(){
@@ -170,7 +170,7 @@ function getMinPerDay4(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("minPerDayResult4").innerHTML = Math.min(A, B , C , D);
+  return document.getElementById("minPerDayResult4").innerHTML = Math.min(A, B , C , D)+" " +"litres";
 }
 
 function getMaxPerDay4(){
@@ -183,7 +183,7 @@ function getMaxPerDay4(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("maxPerDayResult4").innerHTML = Math.max(A, B , C , D);
+  return document.getElementById("maxPerDayResult4").innerHTML = Math.max(A, B , C , D)+" " +"litres";
 }
 //Friday
 function getSumFri() {
@@ -200,10 +200,10 @@ function getSumFri() {
     
 sumResult=A+B+C+D;
    
-return document.getElementById("sumResultFri").innerHTML=sumResult;
+return document.getElementById("sumResultFri").innerHTML=sumResult+" " +"litres";
 }
 
-function getMinPerDay(){
+function getMinPerDay5(){
   let val1=document.getElementById("A5").value;
   let val2=document.getElementById("B5").value;
   let val3=document.getElementById("C5").value;
@@ -213,7 +213,7 @@ function getMinPerDay(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("minPerDayResult").innerHTML = Math.min(A, B , C , D);
+  return document.getElementById("minPerDayResult5").innerHTML = Math.min(A, B , C , D)+" " +"litres";
 }
 
 function getMaxPerDay5(){
@@ -226,7 +226,7 @@ function getMaxPerDay5(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("maxPerDayResult").innerHTML = Math.max(A, B , C , D);
+  return document.getElementById("maxPerDayResult5").innerHTML = Math.max(A, B , C , D)+" " +"litres";
 }
 //Saturday
 function getSumSat() {
@@ -243,7 +243,7 @@ function getSumSat() {
     
 sumResult=A+B+C+D;
    
-return document.getElementById("sumResultSat").innerHTML=sumResult;
+return document.getElementById("sumResultSat").innerHTML=sumResult+" " +"litres";
 }
 
 function getMinPerDay6(){
@@ -256,7 +256,7 @@ function getMinPerDay6(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("minPerDayResult6").innerHTML = Math.min(A, B , C , D);
+  return document.getElementById("minPerDayResult6").innerHTML = Math.min(A, B , C , D)+" " +"litres";
 }
 
 function getMaxPerDay6(){
@@ -269,7 +269,7 @@ function getMaxPerDay6(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("maxPerDayResult6").innerHTML = Math.max(A, B , C , D);
+  return document.getElementById("maxPerDayResult6").innerHTML = Math.max(A, B , C , D)+" " +"litres";
 }
 //Sunday
 function getSumSun() {
@@ -286,7 +286,7 @@ function getSumSun() {
     
 sumResult=A+B+C+D;
    
-return document.getElementById("sumResultSun").innerHTML=sumResult;
+return document.getElementById("sumResultSun").innerHTML=sumResult+" " +"litres";
 }
 
 function getMinPerDay7(){
@@ -299,7 +299,7 @@ function getMinPerDay7(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("minPerDayResult7").innerHTML = Math.min(A, B , C , D);
+  return document.getElementById("minPerDayResult7").innerHTML = Math.min(A, B , C , D)+" " +"litres";
 }
 function getMaxPerDay7(){
   let val1=document.getElementById("A7").value;
@@ -311,7 +311,7 @@ function getMaxPerDay7(){
   B=Number(val2);
   C=Number(val3);
   D=Number(val4);
-  return document.getElementById("maxPerDayResult7").innerHTML = Math.max(A, B , C , D);
+  return document.getElementById("maxPerDayResult7").innerHTML = Math.max(A, B , C , D)+" " +"litres";
 }
 
 
@@ -320,16 +320,21 @@ function getMaxPerDay7(){
 
 
 function getAvgPerWeek(){
+  function getSumMon() {
    
-  let monday=document.getElementById("sumResultMon").innerHTML=sumResult;
-  let tuesday=document.getElementById("sumResultTue").innerHTML=sumResult;
-  let wednesday=document.getElementById("sumResultWed").innerHTML=sumResult;
-  let thursday =document.getElementById("sumResultThur").innerHTML=sumResult;
-  let friday = document.getElementById("sumResultFri").innerHTML=sumResult;
-  let saturday=document.getElementById("sumResultSat").innerHTML=sumResult;
+  sumResult=A+B+C+D;
+     
+  return document.getElementById("sumResultMon").innerHTML=sumResult +" " +"litres";
+  }
+  
+  //let tuesday=document.getElementById("sumResultTue").innerHTML=sumResult;
+  //let wednesday=document.getElementById("sumResultWed").innerHTML=sumResult;
+  //let thursday =document.getElementById("sumResultThur").innerHTML=sumResult;
+  //let friday = document.getElementById("sumResultFri").innerHTML=sumResult;
+  //let saturday=document.getElementById("sumResultSat").innerHTML=sumResult;
   let sunday =document.getElementById("sumResultSun").innerHTML=sumResult;
 
-return getElementById("avgPerWeekResult").innerHTML=monday+tuesday+wednesday+thursday+friday+saturday+sunday;
+return getElementById("avgPerWeekResult").innerHTML=monday+tuesday+wednesday+thursday+friday+saturday+sunday +" " +"litres";
 }
 
 
