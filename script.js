@@ -4,8 +4,6 @@ function myDate() {
 }
 
 
-
-
   //Monday
 
   let values=[A , B , C, D];
@@ -319,21 +317,7 @@ function getMaxPerDay7(){
 
 
 
-function getAvgPerWeek(){
-  function getSumMon() {
-   
-  sumResult=A+B+C+D;
-     
-  return document.getElementById("sumResultMon").innerHTML=sumResult +" " +"litres";
-  }
-  
-  //let tuesday=document.getElementById("sumResultTue").innerHTML=sumResult;
-  //let wednesday=document.getElementById("sumResultWed").innerHTML=sumResult;
-  //let thursday =document.getElementById("sumResultThur").innerHTML=sumResult;
-  //let friday = document.getElementById("sumResultFri").innerHTML=sumResult;
-  //let saturday=document.getElementById("sumResultSat").innerHTML=sumResult;
-  let sunday =document.getElementById("sumResultSun").innerHTML=sumResult;
-
+function getAvgPerWeek( price , days){
 return getElementById("avgPerWeekResult").innerHTML=monday+tuesday+wednesday+thursday+friday+saturday+sunday +" " +"litres";
 }
 
